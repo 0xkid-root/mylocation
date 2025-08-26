@@ -1,0 +1,4 @@
+# Favicon placeholder
+# This would normally be a .ico file
+# For production, you should replace this with a proper 32x32 .ico file
+# You can use online tools to convert the SVG to ICO format
