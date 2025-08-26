@@ -374,6 +374,142 @@ const IPWhoisLookup: React.FC = () => {
             </div>
           </div>
         </div>
+        
+        {/* SEO Content Section */}
+        <div className="container mx-auto px-4 py-16">
+          {/* What is WHOIS */}
+          <section className="bg-white rounded-xl shadow-lg p-8 mb-8">
+            <h2 className="text-3xl font-bold text-green-900 mb-6">What is WHOIS Lookup?</h2>
+            <p className="text-lg text-gray-600 leading-relaxed mb-6">
+              WHOIS is a query and response protocol that provides detailed information about IP addresses, domain names, and network resources. When you perform a WHOIS lookup on an IP address, you can discover the organization that owns it, registration details, contact information, and network configuration data.
+            </p>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+              <div className="border-l-4 border-green-500 pl-6">
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">IP Address Ownership</h3>
+                <p className="text-gray-600">Discover which organization, ISP, or hosting provider owns a specific IP address, including registration dates and contact details.</p>
+              </div>
+              <div className="border-l-4 border-blue-500 pl-6">
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">Network Information</h3>
+                <p className="text-gray-600">Get detailed network data including ASN (Autonomous System Number), IP ranges, and routing information for network analysis.</p>
+              </div>
+            </div>
+          </section>
+
+          {/* Uses for WHOIS */}
+          <section className="bg-green-50 rounded-xl p-8 mb-8">
+            <h2 className="text-3xl font-bold text-green-900 mb-6">Professional Uses for WHOIS Lookup</h2>
+            <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              WHOIS lookups are essential tools for IT professionals, cybersecurity experts, network administrators, and legal professionals. They provide crucial information for security investigations, network troubleshooting, compliance verification, and intellectual property protection.
+            </p>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="bg-white p-6 rounded-lg shadow-sm border border-green-200">
+                <h3 className="text-lg font-semibold text-green-900 mb-3">Cybersecurity Analysis</h3>
+                <ul className="text-gray-700 space-y-2 text-sm">
+                  <li>• Investigate suspicious IP addresses</li>
+                  <li>• Track malicious network activity</li>
+                  <li>• Identify attack sources and patterns</li>
+                  <li>• Verify security incident details</li>
+                </ul>
+              </div>
+              <div className="bg-white p-6 rounded-lg shadow-sm border border-blue-200">
+                <h3 className="text-lg font-semibold text-blue-900 mb-3">Network Administration</h3>
+                <ul className="text-gray-700 space-y-2 text-sm">
+                  <li>• Network troubleshooting and diagnostics</li>
+                  <li>• IP allocation and planning</li>
+                  <li>• Routing configuration verification</li>
+                  <li>• ISP and hosting provider research</li>
+                </ul>
+              </div>
+              <div className="bg-white p-6 rounded-lg shadow-sm border border-purple-200">
+                <h3 className="text-lg font-semibold text-purple-900 mb-3">Legal & Compliance</h3>
+                <ul className="text-gray-700 space-y-2 text-sm">
+                  <li>• Digital forensics investigations</li>
+                  <li>• Intellectual property enforcement</li>
+                  <li>• Regulatory compliance verification</li>
+                  <li>• Legal discovery processes</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          {/* Understanding WHOIS Data */}
+          <section className="bg-white rounded-xl shadow-lg p-8 mb-8">
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">Understanding WHOIS Data Fields</h2>
+            <p className="text-lg text-gray-600 leading-relaxed mb-6">
+              WHOIS records contain various data fields that provide comprehensive information about IP address ownership and network configuration. Understanding these fields helps you extract maximum value from WHOIS lookups for security analysis and network management.
+            </p>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="space-y-4">
+                <div className="p-4 border border-gray-200 rounded-lg">
+                  <h4 className="font-semibold text-gray-900 mb-2">Organization/ISP</h4>
+                  <p className="text-gray-600 text-sm">The organization or Internet Service Provider that owns the IP address range. Essential for identifying the responsible entity.</p>
+                </div>
+                <div className="p-4 border border-gray-200 rounded-lg">
+                  <h4 className="font-semibold text-gray-900 mb-2">ASN (Autonomous System Number)</h4>
+                  <p className="text-gray-600 text-sm">Unique identifier for the network routing domain. Used for BGP routing and network topology analysis.</p>
+                </div>
+                <div className="p-4 border border-gray-200 rounded-lg">
+                  <h4 className="font-semibold text-gray-900 mb-2">Geographic Location</h4>
+                  <p className="text-gray-600 text-sm">Physical location associated with the IP address, including country, region, and city information.</p>
+                </div>
+              </div>
+              <div className="space-y-4">
+                <div className="p-4 border border-gray-200 rounded-lg">
+                  <h4 className="font-semibold text-gray-900 mb-2">Network Range</h4>
+                  <p className="text-gray-600 text-sm">The IP address range or subnet that the queried IP belongs to, useful for network planning and security analysis.</p>
+                </div>
+                <div className="p-4 border border-gray-200 rounded-lg">
+                  <h4 className="font-semibold text-gray-900 mb-2">Registration Date</h4>
+                  <p className="text-gray-600 text-sm">When the IP address range was first registered or last updated, providing timeline context for investigations.</p>
+                </div>
+                <div className="p-4 border border-gray-200 rounded-lg">
+                  <h4 className="font-semibold text-gray-900 mb-2">Contact Information</h4>
+                  <p className="text-gray-600 text-sm">Administrative and technical contact details for the IP address owner, subject to privacy policies.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* FAQ Section */}
+          <section className="bg-gray-50 rounded-xl p-8">
+            <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">WHOIS Lookup Frequently Asked Questions</h2>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="bg-white p-6 rounded-lg shadow-sm">
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">Is WHOIS lookup legal?</h3>
+                <p className="text-gray-600">Yes, WHOIS lookups are completely legal and widely used by IT professionals, researchers, and law enforcement for legitimate purposes like security analysis and network troubleshooting.</p>
+              </div>
+              
+              <div className="bg-white p-6 rounded-lg shadow-sm">
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">What information does WHOIS provide?</h3>
+                <p className="text-gray-600">WHOIS provides IP ownership details, organization information, geographic location, ASN data, registration dates, and sometimes contact information, depending on privacy policies.</p>
+              </div>
+              
+              <div className="bg-white p-6 rounded-lg shadow-sm">
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">How accurate is WHOIS data?</h3>
+                <p className="text-gray-600">WHOIS data accuracy varies by region and organization. Registration information is generally reliable, while geographic data may have varying precision levels similar to IP geolocation.</p>
+              </div>
+              
+              <div className="bg-white p-6 rounded-lg shadow-sm">
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">Can WHOIS be used for cybersecurity?</h3>
+                <p className="text-gray-600">Absolutely! WHOIS is a fundamental tool for cybersecurity professionals to investigate suspicious IPs, track threat actors, analyze attack patterns, and gather intelligence for security operations.</p>
+              </div>
+              
+              <div className="bg-white p-6 rounded-lg shadow-sm">
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">Why might WHOIS data be limited?</h3>
+                <p className="text-gray-600">Some organizations use privacy protection services, and GDPR/privacy regulations may limit the amount of contact information displayed in WHOIS records to protect personal data.</p>
+              </div>
+              
+              <div className="bg-white p-6 rounded-lg shadow-sm">
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">What is ASN in WHOIS data?</h3>
+                <p className="text-gray-600">ASN (Autonomous System Number) identifies the network routing domain that owns the IP range. It's crucial for understanding network topology and BGP routing relationships.</p>
+              </div>
+            </div>
+          </section>
+        </div>
       </div>
     </div>
   );

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Zap, Download, Upload, Wifi, Clock, Play, RotateCcw } from 'lucide-react';
 
 interface SpeedTestResult {
@@ -280,6 +280,36 @@ const InternetSpeedTest: React.FC = () => {
               </div>
             </div>
           </div>
+        </div>
+        
+        {/* SEO Content Section */}
+        <div className="container mx-auto px-4 py-16">
+          {/* Internet Speed FAQ */}
+          <section className="bg-gray-50 rounded-xl p-8">
+            <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Internet Speed Test FAQ</h2>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="bg-white p-6 rounded-lg shadow-sm">
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">Why is my internet slower than advertised?</h3>
+                <p className="text-gray-600">ISPs advertise "up to" speeds that represent maximum theoretical speeds. Actual speeds can be lower due to network congestion, distance from servers, and equipment limitations.</p>
+              </div>
+              
+              <div className="bg-white p-6 rounded-lg shadow-sm">
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">When should I test my internet speed?</h3>
+                <p className="text-gray-600">Test at different times of day to get a comprehensive view. Peak hours (evenings) often show slower speeds due to network congestion, while off-peak hours show optimal performance.</p>
+              </div>
+              
+              <div className="bg-white p-6 rounded-lg shadow-sm">
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">How can I improve my internet speed?</h3>
+                <p className="text-gray-600">Use ethernet instead of WiFi, restart your router regularly, close unnecessary applications, update network drivers, and consider upgrading your internet plan or equipment.</p>
+              </div>
+              
+              <div className="bg-white p-6 rounded-lg shadow-sm">
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">What causes high ping and jitter?</h3>
+                <p className="text-gray-600">High ping can be caused by distance to servers, network congestion, or poor routing. Jitter indicates inconsistent latency, often due to network instability or interference.</p>
+              </div>
+            </div>
+          </section>
         </div>
       </div>
     </div>

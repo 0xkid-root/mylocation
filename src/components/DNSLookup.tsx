@@ -337,6 +337,65 @@ const DNSLookup: React.FC = () => {
             </div>
           </div>
         </div>
+        
+        {/* SEO Content Section */}
+        <div className="container mx-auto px-4 py-16">
+          {/* What is DNS */}
+          <section className="bg-white rounded-xl shadow-lg p-8 mb-8">
+            <h2 className="text-3xl font-bold text-indigo-900 mb-6">What is DNS Lookup?</h2>
+            <p className="text-lg text-gray-600 leading-relaxed mb-6">
+              DNS (Domain Name System) lookup is the process of translating human-readable domain names into IP addresses that computers use to communicate. When you perform a DNS lookup, you're querying the global DNS infrastructure to retrieve various types of records associated with a domain name, including A records (IPv4 addresses), AAAA records (IPv6 addresses), MX records (mail servers), and more.
+            </p>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+              <div className="border-l-4 border-indigo-500 pl-6">
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">DNS Resolution Process</h3>
+                <p className="text-gray-600">DNS queries follow a hierarchical structure, starting from root servers, then TLD servers, and finally authoritative name servers to resolve domain names to IP addresses.</p>
+              </div>
+              <div className="border-l-4 border-blue-500 pl-6">
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">Record Types & Uses</h3>
+                <p className="text-gray-600">Different DNS record types serve specific purposes: A/AAAA for web hosting, MX for email routing, NS for delegation, TXT for verification and policies.</p>
+              </div>
+            </div>
+          </section>
+
+          {/* DNS Troubleshooting FAQ */}
+          <section className="bg-gray-50 rounded-xl p-8">
+            <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">DNS Lookup Frequently Asked Questions</h2>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="bg-white p-6 rounded-lg shadow-sm">
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">What is DNS propagation?</h3>
+                <p className="text-gray-600">DNS propagation is the time it takes for DNS changes to spread across all DNS servers worldwide. This can take 24-48 hours depending on TTL values and caching policies.</p>
+              </div>
+              
+              <div className="bg-white p-6 rounded-lg shadow-sm">
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">Why do DNS lookups fail?</h3>
+                <p className="text-gray-600">DNS lookup failures can occur due to misconfigured records, server downtime, network connectivity issues, or incorrect domain name spelling.</p>
+              </div>
+              
+              <div className="bg-white p-6 rounded-lg shadow-sm">
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">What is TTL in DNS records?</h3>
+                <p className="text-gray-600">TTL (Time To Live) specifies how long DNS records should be cached by resolvers. Lower TTL values mean faster updates but more DNS queries.</p>
+              </div>
+              
+              <div className="bg-white p-6 rounded-lg shadow-sm">
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">How to fix email delivery with MX records?</h3>
+                <p className="text-gray-600">Ensure MX records point to valid mail servers with correct priority values. Test email flow and verify SPF/DKIM records in TXT entries.</p>
+              </div>
+              
+              <div className="bg-white p-6 rounded-lg shadow-sm">
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">What are authoritative DNS servers?</h3>
+                <p className="text-gray-600">Authoritative DNS servers contain the official DNS records for a domain and provide definitive answers to DNS queries, as opposed to cached responses.</p>
+              </div>
+              
+              <div className="bg-white p-6 rounded-lg shadow-sm">
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">How to troubleshoot DNS issues?</h3>
+                <p className="text-gray-600">Start by checking A records, verify MX records for email, validate NS records for delegation, and use DNS lookup tools to diagnose specific problems.</p>
+              </div>
+            </div>
+          </section>
+        </div>
       </div>
     </div>
   );

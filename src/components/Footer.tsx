@@ -15,8 +15,7 @@ const Footer: React.FC = () => {
               <span className="text-xl font-bold">MyLocation</span>
             </div>
             <p className="text-gray-400 mb-4 max-w-md">
-              Professional network tools for IP geolocation, WHOIS lookup, speed testing, and comprehensive network analysis. 
-              Get accurate results with our suite of free online tools.
+              Professional network analysis tools for IT professionals, cybersecurity experts, and network administrators. Free IP geolocation, WHOIS lookup, internet speed testing, DNS analysis, port scanning, and network diagnostics. Trusted worldwide for accurate network intelligence and security auditing.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-blue-500 transition-colors duration-200">

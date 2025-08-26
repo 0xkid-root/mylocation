@@ -434,6 +434,108 @@ const MyLocation: React.FC = () => {
             </div>
           </div>
         )}
+        
+        {/* SEO Content Section - Always visible */}
+        <div className="container mx-auto px-4 py-16">
+          {/* Understanding Your IP Location */}
+          <section className="bg-white rounded-xl shadow-lg p-8 mb-8">
+            <h2 className="text-3xl font-bold text-blue-900 mb-6">Understanding Your IP Address Location</h2>
+            <p className="text-lg text-gray-600 leading-relaxed mb-6">
+              Your IP address location provides valuable information about your internet connection and geographic position. When you connect to the internet, your Internet Service Provider (ISP) assigns you an IP address that can be used to determine your approximate location, including country, city, region, and timezone.
+            </p>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+              <div className="border-l-4 border-blue-500 pl-6">
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">IPv4 vs IPv6 Addresses</h3>
+                <p className="text-gray-600">IPv4 addresses use a 32-bit format (like 192.168.1.1) with about 4.3 billion possible addresses. IPv6 uses 128-bit format (like 2001:db8::1) providing virtually unlimited addresses for future internet growth.</p>
+              </div>
+              <div className="border-l-4 border-green-500 pl-6">
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">Geolocation Accuracy</h3>
+                <p className="text-gray-600">Country-level accuracy is typically 95-99%, while city-level accuracy ranges from 55-80%. The accuracy depends on your ISP, connection type, and geographic location.</p>
+              </div>
+            </div>
+          </section>
+
+          {/* What is a Private IP Address */}
+          <section className="bg-blue-50 rounded-xl p-8 mb-8">
+            <h2 className="text-3xl font-bold text-blue-900 mb-6">What is a Private IP Address?</h2>
+            <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              A private IP address is assigned to devices within a local network, like your home or office WiFi. These addresses are used for internal communication and are not directly accessible from the Internet. Private IPs typically start with 10, 172, or 192 and are reserved by the Internet Assigned Numbers Authority (IANA). Unlike public IPs, which are visible online, private IPs stay hidden behind your router or firewall.
+            </p>
+            
+            <div className="bg-white p-6 rounded-lg shadow-sm mb-6">
+              <h3 className="text-xl font-semibold text-green-900 mb-4">Private IP Address Ranges</h3>
+              <div className="space-y-3">
+                <div className="flex justify-between items-center py-2 border-b border-gray-200">
+                  <span className="font-medium text-gray-800">Class A:</span>
+                  <span className="text-gray-600">10.0.0.0 to 10.255.255.255 (16,777,216 addresses)</span>
+                </div>
+                <div className="flex justify-between items-center py-2 border-b border-gray-200">
+                  <span className="font-medium text-gray-800">Class B:</span>
+                  <span className="text-gray-600">172.16.0.0 to 172.31.255.255 (1,048,576 addresses)</span>
+                </div>
+                <div className="flex justify-between items-center py-2">
+                  <span className="font-medium text-gray-800">Class C:</span>
+                  <span className="text-gray-600">192.168.0.0 to 192.168.255.255 (65,536 addresses)</span>
+                </div>
+              </div>
+            </div>
+            
+            <p className="text-blue-600 font-medium">
+              <a href="#" className="hover:text-blue-800 underline">Learn more about private IP addresses »</a>
+            </p>
+          </section>
+
+          {/* Network Security & IP Analysis */}
+          <section className="bg-white rounded-xl shadow-lg p-8 mb-8">
+            <h2 className="text-3xl font-bold text-blue-900 mb-6">Network Security & IP Analysis</h2>
+            <p className="text-lg text-gray-600 leading-relaxed mb-6">
+              Understanding your network's IP configuration is crucial for cybersecurity. Our tools help identify potential security risks, unauthorized access attempts, and network vulnerabilities. Regular network monitoring using IP analysis, port scanning, and WHOIS lookups helps maintain secure network environments.
+            </p>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="bg-yellow-50 p-6 rounded-lg border border-yellow-200">
+                <h3 className="text-lg font-semibold text-yellow-900 mb-3">Threat Detection</h3>
+                <p className="text-yellow-800">Monitor suspicious IP addresses and identify potential security threats through comprehensive IP analysis and geolocation tracking.</p>
+              </div>
+              <div className="bg-red-50 p-6 rounded-lg border border-red-200">
+                <h3 className="text-lg font-semibold text-red-900 mb-3">Vulnerability Assessment</h3>
+                <p className="text-red-800">Use port scanning and network analysis to identify open services and potential security vulnerabilities in your network infrastructure.</p>
+              </div>
+              <div className="bg-green-50 p-6 rounded-lg border border-green-200">
+                <h3 className="text-lg font-semibold text-green-900 mb-3">Network Monitoring</h3>
+                <p className="text-green-800">Regular network diagnostics help maintain optimal performance and quickly identify connectivity issues before they impact users.</p>
+              </div>
+            </div>
+          </section>
+
+          {/* FAQ Section */}
+          <section className="bg-gray-50 rounded-xl p-8">
+            <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Frequently Asked Questions</h2>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="bg-white p-6 rounded-lg shadow-sm">
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">How accurate is IP geolocation?</h3>
+                <p className="text-gray-600">IP location accuracy varies: country-level is 95-99% accurate, while city-level ranges from 55-80%. We use multiple reliable databases for the most accurate results possible.</p>
+              </div>
+              
+              <div className="bg-white p-6 rounded-lg shadow-sm">
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">Can I hide my IP location?</h3>
+                <p className="text-gray-600">Yes, you can use VPN services, proxy servers, or Tor browser to mask your real IP address and location. However, some websites may detect and block these methods.</p>
+              </div>
+              
+              <div className="bg-white p-6 rounded-lg shadow-sm">
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">What information does my IP reveal?</h3>
+                <p className="text-gray-600">Your IP address can reveal your approximate location, ISP, timezone, and connection type. It cannot reveal your exact address, name, or personal information.</p>
+              </div>
+              
+              <div className="bg-white p-6 rounded-lg shadow-sm">
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">Why do I have both IPv4 and IPv6?</h3>
+                <p className="text-gray-600">Many modern networks support dual-stack configuration, providing both IPv4 and IPv6 addresses for backward compatibility and future-proofing your internet connection.</p>
+              </div>
+            </div>
+          </section>
+        </div>
       </div>
     </div>
   );

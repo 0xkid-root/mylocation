@@ -28,8 +28,8 @@ const Home: React.FC<HomeProps> = ({ onToolSelect }) => {
   const tools = [
     {
       id: 'my-location',
-      name: 'My IP Location',
-      description: 'Find your current IP address and location details',
+      name: 'My Location',
+      description: 'Instantly find your current IP address location with detailed geolocation data including country, city, ISP, and timezone information',
       icon: MapPin,
       color: 'bg-blue-500',
       hoverColor: 'hover:bg-blue-600'
@@ -37,7 +37,7 @@ const Home: React.FC<HomeProps> = ({ onToolSelect }) => {
     {
       id: 'ip-whois',
       name: 'IP WHOIS Lookup',
-      description: 'Get detailed WHOIS information for any IP address',
+      description: 'Get comprehensive WHOIS information for any IP address including ownership details, registration data, and network information',
       icon: Search,
       color: 'bg-green-500',
       hoverColor: 'hover:bg-green-600'
@@ -45,7 +45,7 @@ const Home: React.FC<HomeProps> = ({ onToolSelect }) => {
     {
       id: 'mac-lookup',
       name: 'MAC Address Lookup',
-      description: 'Find manufacturer details from MAC addresses',
+      description: 'Identify network device manufacturers and vendor information from MAC addresses for network inventory and security analysis',
       icon: Wifi,
       color: 'bg-purple-500',
       hoverColor: 'hover:bg-purple-600'
@@ -53,7 +53,7 @@ const Home: React.FC<HomeProps> = ({ onToolSelect }) => {
     {
       id: 'speed-test',
       name: 'Internet Speed Test',
-      description: 'Test your internet connection speed',
+      description: 'Test your internet connection speed with accurate download, upload, and ping measurements for network performance analysis',
       icon: Zap,
       color: 'bg-yellow-500',
       hoverColor: 'hover:bg-yellow-600'
@@ -61,7 +61,7 @@ const Home: React.FC<HomeProps> = ({ onToolSelect }) => {
     {
       id: 'dns-lookup',
       name: 'DNS Lookup',
-      description: 'Perform DNS queries and get DNS records',
+      description: 'Perform comprehensive DNS queries and analyze all record types (A, AAAA, MX, NS, TXT) for domain troubleshooting',
       icon: Server,
       color: 'bg-indigo-500',
       hoverColor: 'hover:bg-indigo-600'
@@ -69,7 +69,7 @@ const Home: React.FC<HomeProps> = ({ onToolSelect }) => {
     {
       id: 'port-scanner',
       name: 'Port Scanner',
-      description: 'Scan for open ports on any IP address',
+      description: 'Scan network ports to identify open services and potential security vulnerabilities for network security auditing',
       icon: Shield,
       color: 'bg-red-500',
       hoverColor: 'hover:bg-red-600'
@@ -77,7 +77,7 @@ const Home: React.FC<HomeProps> = ({ onToolSelect }) => {
     {
       id: 'ping-test',
       name: 'Ping Test',
-      description: 'Test network connectivity and latency',
+      description: 'Test network connectivity and measure latency with comprehensive ping analysis for network troubleshooting',
       icon: Activity,
       color: 'bg-teal-500',
       hoverColor: 'hover:bg-teal-600'
@@ -173,8 +173,7 @@ const Home: React.FC<HomeProps> = ({ onToolSelect }) => {
               My Location & Network Tools
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-              Comprehensive suite of network tools for IP geolocation, WHOIS lookup, speed testing, and more. 
-              Get detailed information about any IP address or test your network connectivity.
+              Professional-grade network analysis suite offering free IP geolocation, WHOIS domain lookup, internet speed testing, DNS analysis, port scanning, and comprehensive network diagnostics. Trusted by IT professionals, developers, and network administrators worldwide for accurate real-time network intelligence.
             </p>
           </div>
 
@@ -360,6 +359,31 @@ const Home: React.FC<HomeProps> = ({ onToolSelect }) => {
               <h3 className="text-xl font-semibold text-gray-900 mb-3">What is WHOIS lookup?</h3>
               <p className="text-gray-600">WHOIS lookup reveals detailed information about IP address ownership, including organization details, registration dates, and network information for security and troubleshooting.</p>
             </div>
+            
+            <div className="bg-gray-50 p-6 rounded-lg">
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">What is DNS lookup?</h3>
+              <p className="text-gray-600">DNS lookup translates domain names into IP addresses. Our tool checks A, AAAA, MX, NS, TXT, and other DNS records to help diagnose domain configuration issues.</p>
+            </div>
+            
+            <div className="bg-gray-50 p-6 rounded-lg">
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">How does port scanning work?</h3>
+              <p className="text-gray-600">Port scanning checks which network ports are open on an IP address. This helps identify running services and potential security vulnerabilities for network security auditing.</p>
+            </div>
+            
+            <div className="bg-gray-50 p-6 rounded-lg">
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">What is MAC address lookup?</h3>
+              <p className="text-gray-600">MAC address lookup identifies the manufacturer of network devices by analyzing the first 6 digits (OUI) of the MAC address. Useful for network inventory and security.</p>
+            </div>
+            
+            <div className="bg-gray-50 p-6 rounded-lg">
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Why test internet speed?</h3>
+              <p className="text-gray-600">Speed testing measures your internet connection's download/upload speeds and latency. Essential for troubleshooting connectivity issues and verifying ISP performance.</p>
+            </div>
+            
+            <div className="bg-gray-50 p-6 rounded-lg">
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">What is ping testing?</h3>
+              <p className="text-gray-600">Ping testing measures network latency and packet loss between your device and a target server. Critical for diagnosing network connectivity and performance issues.</p>
+            </div>
           </div>
         </div>
       </section>
@@ -389,12 +413,43 @@ const Home: React.FC<HomeProps> = ({ onToolSelect }) => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="space-y-12">
+              {/* Network Tools Benefits */}
+              <div>
+                <h2 className="text-3xl font-bold text-blue-900 mb-6">Professional Network Analysis & Security Tools</h2>
+                <p className="text-lg text-gray-600 leading-relaxed mb-6">
+                  Our comprehensive network tools suite provides IT professionals, cybersecurity experts, and network administrators with essential utilities for network monitoring, security auditing, and performance optimization. Each tool is designed for accuracy, speed, and ease of use in professional environments.
+                </p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                  <div className="border-l-4 border-blue-500 pl-6">
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">IP Geolocation & WHOIS</h3>
+                    <p className="text-gray-600">Instantly identify the geographic location of any IP address with detailed WHOIS information including ISP, organization, and network details. Essential for security investigations and network troubleshooting.</p>
+                  </div>
+                  <div className="border-l-4 border-green-500 pl-6">
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Network Performance Testing</h3>
+                    <p className="text-gray-600">Comprehensive internet speed testing, ping analysis, and latency measurement tools help diagnose connectivity issues and optimize network performance for better user experience.</p>
+                  </div>
+                  <div className="border-l-4 border-purple-500 pl-6">
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">DNS & Domain Analysis</h3>
+                    <p className="text-gray-600">Advanced DNS lookup tools support all record types (A, AAAA, MX, NS, TXT, CNAME, SOA) for domain configuration analysis, email routing diagnostics, and DNS troubleshooting.</p>
+                  </div>
+                  <div className="border-l-4 border-red-500 pl-6">
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Security & Port Scanning</h3>
+                    <p className="text-gray-600">Network port scanning and MAC address lookup tools help identify open services, security vulnerabilities, and device manufacturers for comprehensive network security auditing.</p>
+                  </div>
+                </div>
+              </div>
+
               {/* How IP Address Works */}
               <div>
                 <h2 className="text-3xl font-bold text-blue-900 mb-6">How does an IP address work?</h2>
-                <p className="text-lg text-gray-600 leading-relaxed">
+                <p className="text-lg text-gray-600 leading-relaxed mb-4">
                   When your device connects to the Internet, your Internet Service Provider (ISP) assigns it an IP address. This address acts like a return address for data—allowing websites, apps, and services to send information back to you. IP addresses help route traffic to the correct destination, whether you're browsing the web, streaming video, or sending emails. Without an IP your device wouldn't be able to communicate with other systems on the network.
                 </p>
+                <div className="bg-blue-50 p-6 rounded-lg mb-6">
+                  <h3 className="text-xl font-semibold text-blue-900 mb-3">IPv4 vs IPv6 Addresses</h3>
+                  <p className="text-gray-700 mb-3">IPv4 addresses use a 32-bit format (like 192.168.1.1) and are limited to about 4.3 billion unique addresses. IPv6 uses 128-bit format (like 2001:db8::1) providing virtually unlimited addresses for the growing internet.</p>
+                  <p className="text-gray-700">Our tools detect and analyze both IPv4 and IPv6 addresses, providing comprehensive information about your network connectivity and location details.</p>
+                </div>
               </div>
 
               {/* Private IP Address */}
@@ -403,9 +458,39 @@ const Home: React.FC<HomeProps> = ({ onToolSelect }) => {
                 <p className="text-lg text-gray-600 leading-relaxed mb-4">
                   A private IP address is assigned to devices within a local network, like your home or office WiFi. These addresses are used for internal communication and are not directly accessible from the Internet. Private IPs typically start with 10, 172, or 192 and are reserved by the Internet Assigned Numbers Authority (IANA). Unlike public IPs, which are visible online, private IPs stay hidden behind your router or firewall.
                 </p>
+                <div className="bg-green-50 p-6 rounded-lg mb-4">
+                  <h3 className="text-xl font-semibold text-green-900 mb-3">Private IP Address Ranges</h3>
+                  <ul className="text-gray-700 space-y-2">
+                    <li><strong>Class A:</strong> 10.0.0.0 to 10.255.255.255 (16,777,216 addresses)</li>
+                    <li><strong>Class B:</strong> 172.16.0.0 to 172.31.255.255 (1,048,576 addresses)</li>
+                    <li><strong>Class C:</strong> 192.168.0.0 to 192.168.255.255 (65,536 addresses)</li>
+                  </ul>
+                </div>
                 <p className="text-blue-600 font-medium">
                   <a href="#" className="hover:text-blue-800 underline">Learn more about private IP addresses »</a>
                 </p>
+              </div>
+
+              {/* Network Security */}
+              <div>
+                <h2 className="text-3xl font-bold text-blue-900 mb-6">Network Security & IP Analysis</h2>
+                <p className="text-lg text-gray-600 leading-relaxed mb-6">
+                  Understanding your network's IP configuration is crucial for cybersecurity. Our tools help identify potential security risks, unauthorized access attempts, and network vulnerabilities. Regular network monitoring using IP analysis, port scanning, and WHOIS lookups helps maintain secure network environments.
+                </p>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                  <div className="bg-yellow-50 p-4 rounded-lg">
+                    <h3 className="text-lg font-semibold text-yellow-900 mb-2">Threat Detection</h3>
+                    <p className="text-yellow-800">Monitor suspicious IP addresses and identify potential security threats through comprehensive IP analysis.</p>
+                  </div>
+                  <div className="bg-red-50 p-4 rounded-lg">
+                    <h3 className="text-lg font-semibold text-red-900 mb-2">Vulnerability Assessment</h3>
+                    <p className="text-red-800">Use port scanning and network analysis to identify open services and potential security vulnerabilities.</p>
+                  </div>
+                  <div className="bg-green-50 p-4 rounded-lg">
+                    <h3 className="text-lg font-semibold text-green-900 mb-2">Network Monitoring</h3>
+                    <p className="text-green-800">Regular network diagnostics help maintain optimal performance and quickly identify connectivity issues.</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
